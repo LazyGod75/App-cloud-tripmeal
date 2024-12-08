@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: lazyg75/tripmeal-web
+      - image: europe-west1-docker.pkg.dev/gq-cloud-computing/tripmeal-repo/tripmeal-web:1.0
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: lazyg75/tripmeal-db
+      - image: europe-west1-docker.pkg.dev/gq-cloud-computing/tripmeal-repo/tripmeal-db:1.0
         name: db
         ports:
         - containerPort: 3306
@@ -91,7 +91,7 @@ spec:
         - name: DATABASE_NAME
           value: "tripmealdb"
         - name: DATABASE_USER
-          value: "root" 
+          value: "root"
         - name: MYSQL_ROOT_PASSWORD
           value: "my-secret-pw"
   volumeClaimTemplates:
