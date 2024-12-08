@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: #ADD NAME OF YOUR IMAGE
+      - image: lazyg75/tripmeal-web
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: #ADD NAME OF YOUR IMAGE
+      - image: lazyg75/tripmeal-db
         name: db
         ports:
         - containerPort: 3306
